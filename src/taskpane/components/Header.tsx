@@ -26,7 +26,7 @@ const useStyles = makeStyles({
 const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
   const { title, logo, message } = props;
   const styles = useStyles();
-
+// section className=
   return (
     <section className={styles.welcome__header}>
       <Image width="90" height="90" src={logo} alt={title} />
