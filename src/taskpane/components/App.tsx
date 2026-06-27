@@ -119,7 +119,6 @@ const App: React.FC = () => {
       reportUrl = `https://api.xero.com/api.xro/2.0/Reports/TrialBalance?date=${asOfDate}`;
       headers["xero-tenant-id"] = tId;
     }
-// api.xero.com
     try {
       const response = await fetch(proxyUrl + reportUrl, { method: "GET", headers: headers });
       if (!response.ok) throw new Error("API failed");
