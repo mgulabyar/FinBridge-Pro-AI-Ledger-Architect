@@ -1,6 +1,6 @@
 import * as React from "react";
 import { tokens, makeStyles } from "@fluentui/react-components";
-// import token, makes style from fleunt
+// import token, makes 
 export interface HeroListItem {
   icon: React.JSX.Element;
   primaryText: string;
