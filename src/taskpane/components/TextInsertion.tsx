@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Button, Field, Textarea, tokens, makeStyles } from "@fluentui/react-components";
 
 /* global HTMLTextAreaElement */
-
+// global HTML TextAreaElement
 interface TextInsertionProps {
   insertText: (text: string) => void;
 }
