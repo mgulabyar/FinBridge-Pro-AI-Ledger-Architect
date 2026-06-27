@@ -1,0 +1,44 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+</head>
+<body>
+    <script>
+        Office.onReady(function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const code = urlParams.get('code');
+            if (code) {
+                Office.context.ui.messageParent(JSON.stringify({ status: "success", code: code }));
+            }
+        });
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+</head>
+<body>
+    <script>
+        Office.onReady(function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const code = urlParams.get('code');
+            const realmId = urlParams.get('realmId'); // Company ID capture karna
+
+            if (code) {
+                // Taskpane ko code aur realmId dono bhejna
+                Office.context.ui.messageParent(JSON.stringify({ 
+                    status: "success", 
+                    code: code, 
+                    realmId: realmId 
+                }));
+            } else {
+                Office.context.ui.messageParent(JSON.stringify({ status: "error" }));
+            }
+        });
+    </script>
+</body>
+</html>
