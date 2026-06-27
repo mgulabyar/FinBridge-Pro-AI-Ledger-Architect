@@ -18,7 +18,6 @@ const App: React.FC = () => {
 
   const primaryBlue = "#2c3e50";
   const accentAmber = "#f39221";
-// orange and primary bue color using 
   const config = {
     qb: {
       id: "ABSW73Wyr1TLX9RJXaBOHGKOKQvG0oHWZHVDn2nyWbVB6Mp2qH",
