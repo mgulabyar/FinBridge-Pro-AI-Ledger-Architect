@@ -32,7 +32,6 @@ const App: React.FC = () => {
       auth: "https://login.xero.com/identity/connect/authorize"
     }
   };
-//  i have face many 
   const currentConfig = platform === 0 ? config.qb : config.xero;
   const isConnected = platform === 0 ? isConnectedQB : isConnectedXero;
 
